@@ -1,0 +1,22 @@
+body {
+    background-color: green;
+    background: url(Tennis.jpg) 0 0;
+    background-size: cover;
+}
+
+h1   {
+    color: rgb(8, 0, 1);
+}
+li   {
+    color: rgb(7, 4, 4);
+}
+table, th, td {
+    border:1px solid black;
+  }
+  
+    a:link {color:#3b0303; text-decoration: none;}
+    a:visited {color: #020102;}
+    a:hover {text-decoration: underline;}
+*{
+    box-sizing: border-box;
+    }

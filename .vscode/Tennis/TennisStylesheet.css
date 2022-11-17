@@ -8,7 +8,7 @@ h1   {
     color: rgb(8, 0, 1);
 }
 li   {
-    color: rgb(7, 4, 4);
+    color: rgb(255, 255, 255);
 }
 table, th, td {
     border:1px solid black;
@@ -20,3 +20,17 @@ table, th, td {
 *{
     box-sizing: border-box;
     }
+    .layout {
+        width: 1366px;
+        height: 768px;
+      
+        display: grid;
+        grid:
+          "header" 20%
+          "main" 80%    
+          / 1fr;
+        gap: 8px;
+      }
+      
+      .header { grid-area: header; }
+      .main { grid-area: main; }

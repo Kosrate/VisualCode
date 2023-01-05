@@ -20,17 +20,136 @@ table, th, td {
 *{
     box-sizing: border-box;
     }
+    
     .layout {
-        width: 1366px;
-        height: 768px;
-      
-        display: grid;
-        grid:
-          "header" 20%
-          "main" 80%    
-          / 1fr;
-        gap: 8px;
-      }
-      
-      .header { grid-area: header; }
-      .main { grid-area: main; }
+      width: 1366px;
+      height: 768px;
+    
+      display: grid;
+      grid:
+        "sidebar body" 1fr
+        / 30% 70%;
+      gap: 8px;
+    }
+    
+    .sidebar { grid-area: sidebar; }
+    .body { grid-area: body; }
+
+    ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 70%;
+  background: #35167c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 10%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 10%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+h1 {
+  margin-left: 70px;
+  }
+  form li {
+  list-style: none;
+  margin-bottom: 5px;
+  }
+  
+  form ul li label{
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-size:14px;
+  }
+  
+  form ul li input, select, span {
+  float: left;
+  margin-bottom: 10px;
+  }
+  
+  form textarea {
+  float: left;
+  width: 350px;
+  height: 150px;
+  }
+  
+  [type="submit"] {
+  clear: left;
+  margin: 20px 0 0 230px;
+  font-size:18px
+  }
+  
+  p {
+  margin-left: 70px;
+  font-weight: bold;
+  }
+  
+
+
+
+

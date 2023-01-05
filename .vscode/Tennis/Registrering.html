@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation using a sample registration form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="sample-registration-form-validation.js"></script>
+<link rel="stylesheet" href="TennisStylesheet.css">
+</head>
+<body onload="document.registration.userid.focus();">
+    <li><a href="Tennis.html"><b>Start</b></a></li>
+<h1>Registrering</h1>
+<form name='registration' onSubmit="return formValidation();">
+<ul>
+<li><label for="Användarid">Användare:</label></li>
+<li><input type="text" name="userid" size="12" /></li>
+<li><label for="passid">Lösenord:</label></li>
+<li><input type="password" Namn="passid" size="12" /></li>
+<li><label for="username">Namn:</label></li>
+<li><input type="text" Namn="Användarid" size="50" /></li>
+<li><label for="address">Adress:</label></li>
+<li><input type="text" name=Adress" size="50" /></li>
+<li><label for="country">Land:</label></li>
+<li><select name="country">
+<option selected="" value="Default">(Välj Land)</option>
+<option value="AF">Sverige</option>
+<option value="AL">Danmark</option>
+<option value="DZ">Norge</option>
+<option value="AS">Finland</option>
+<option value="AD">USA</option>
+</select></li>
+<li><label for="zip">Postnummer:</label></li>
+<li><input type="text" name="zip" /></li>
+<li><label for="email">Email:</label></li>
+<li><input type="text" name="email" size="50" /></li>
+<li><label id="gender">Kön:</label></li>
+<li><input type="radio" name="msex" value="Male" /><span>Man</span></li>
+<li><input type="radio" name="fsex" value="Female" /><span>Kvinna</span></li>
+<li><label>Språk:</label></li>
+<li><input type="checkbox" name="en" value="en" checked /><span>English</span></li>
+<li><input type="checkbox" name="nonen" value="noen" /><span>Non English</span></li>
+<li><label for="desc">Info:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</body>
+</html>

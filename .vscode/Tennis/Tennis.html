@@ -3,45 +3,89 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="TennisStylesheet.css">
+        <style>
+          * {
+            box-sizing: border-box;
+          }
+          .menu {
+            float: left;
+            width: 20%;
+          }
+          .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+          }
+          .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+          }
+          .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+          }
+          
+          @media only screen and (max-width:800px) {
+            /* For tablets: */
+            .main {
+              width: 80%;
+              padding: 0;
+            }
+            .right {
+              width: 100%;
+            }
+          }
+          @media only screen and (max-width:500px) {
+            /* For mobile phones: */
+            .menu, .main, .right {
+              width: 100%;
+            }
+          }
+          </style>
     </head>
 
     <body>
-      <table>
-
-      <section class="layout">
-        
-        <div class="header">1</div>
+      <section class="layout">      
+        <div class="body">
+        <table>        
           <tr>
             <th>Eksjö BK</th>
             <th>Stewe Berggren</th>
             <th>Sverige</th>
+            <h1><b>BOKNINGSSYSTEM</b></h1>
           </tr>
-          
         </table>
-               
+        </div>
+              <div class="sidebar">             
                 <br>
                 <br>
-                <h1 align="center"><b>BOKNINGSSYSTEM</b></h1>
+                <br>
+                <br>
+                <li><button><a href="Registrering.html">Registrering</a></button></li>
+                <br>
+                <br>
                 <li><button><a href="Kalender.html">Kalender</a></button></li>
                 <br>
                 <br>
                 <li><button><a href="Banor.html">Banor</a></button></li>
                 <br>
                 <br>
-                <li><a href="Omklädningsrum.html">Omklädningsrum</a></li>
+                <li><button><a href="Omklädningsrum.html">Omklädningsrum</a></button></li>
                 <br>
                 <br>
-                <li><a href="Bastu.html">Bastu</a></li>
+                <li><button><a href="Bastu.html">Bastu</a></button></li>
                 </n1>
               </div>
-        </section>
-
-        <section class="layout">
-          <div class="main">Hej</div>
-        </section>
-
-
-
+      </section>
 
     </body>
 </html>
+
+
+
+
